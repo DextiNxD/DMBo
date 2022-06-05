@@ -549,30 +549,30 @@ except KeyError:
 try:
     GD_INFO = getConfig('GD_INFO')
     if len(GD_INFO) == 0:
-        GD_INFO = 'Uploaded by Helios Mirror Bot'
+        GD_INFO = 'Uploaded by DextiN Mirror Bot'
 except KeyError:
-    GD_INFO = 'Uploaded by Helios Mirror Bot'
+    GD_INFO = 'Uploaded by DextiN Mirror Bot'
 
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Helios-Mirror-Search'
+        TITLE_NAME = 'DextiN-Mirror-Search'
 except KeyError:
-    TITLE_NAME = 'Helios-Mirror-Search'
+    TITLE_NAME = 'DextiN-Mirror-Search'
 
 try:
     AUTHOR_NAME = getConfig('AUTHOR_NAME')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'Helios-Mirror-Bot'
+        AUTHOR_NAME = 'DextiN-Mirror-Bot'
 except KeyError:
-    AUTHOR_NAME = 'Helios-Mirror-Bot'
+    AUTHOR_NAME = 'DextiN-Mirror-Bot'
 
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/heliosmirror'
+        AUTHOR_URL = 'https://t.me/NetflixTudum'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/heliosmirror'
+    AUTHOR_URL = 'https://t.me/NetflixTudum'
 
 try:
     BOT_PM = getConfig('BOT_PM')
@@ -590,15 +590,15 @@ try:
     FSUB_CHANNEL_ID = int(getConfig('FSUB_CHANNEL_ID'))
 except Exception as error:
     LOGGER.warning(f"FSUB_CHANNEL_ID env is empty:\n{error}")
-    FSUB_CHANNEL_ID = "-1001576780814"
+    FSUB_CHANNEL_ID = "-1001594774197"
     pass
 try:
     CHANNEL_USERNAME: str = getConfig('CHANNEL_USERNAME').replace("@", "")
     if len(CHANNEL_USERNAME) == 0:
-        CHANNEL_USERNAME = 'heliosmirror'
+        CHANNEL_USERNAME = 'NetflixTudum'
 except KeyError:
     logging.warning('CHANNEL_USERNAME not provided')
-    CHANNEL_USERNAME = 'heliosmirror'
+    CHANNEL_USERNAME = 'NetflixTudum'
 
 try:
     LEECH_ENABLED = getConfig('LEECH_ENABLED')
